@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/paste.css') }}" />
+{% endblock %}
+
+{% block content %}
+	<div class="paste-container">
+		<div class="paste-title">
+			{{ paste.title }}
+		</div>
+		<pre class="paste-content"><code>
+			{{ paste.content }}
+		</code></pre>
+	</div>
+	
+{% endblock %}
