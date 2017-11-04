@@ -18,16 +18,8 @@
 {
     display: flex;
 
-    margin: 1rem;
-    margin-right: 0;
-
     flex-flow: column;
     flex: 0 0 auto;
-}
-
-.paste-info > *:first-child
-{
-    margin-top: 0;
 }
 
 .paste-content
@@ -45,27 +37,31 @@
     width: 100%;
     height: 100%;
     margin: 0;
+
+    background: #2b303b;
+
     flex: 1 1 auto;
 }
 
 .paste-title
 {
-    margin: .5rem 0;
+    box-sizing: border-box;
+    margin: 0 .5rem;
+
+    background: #4f5b66;
 }
 
-.paste-title
+.paste-title,
 .paste-area
 {
     font-size: 1rem;
 
     box-sizing: border-box;
-    width: 100%;
     padding: .75rem 1.5rem .75rem;
 
     color: #d8dee9;
     border: none;
     border-radius: .25rem;
-    background: #343d46;
 }
 
 .paste-title:focus,
@@ -81,14 +77,31 @@
         flex-flow: column;
     }
 
-    .paste-info {
+    .paste-info
+    {
+        margin: 0 .5rem;
+        flex-flow: row;
+    }
+
+    .paste-title
+    {
+        margin: .5rem;
+        flex: 1 1 auto;
+    }
+
+    .paste-content
+    {
         margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .paste-info {
+        flex-flow: column;
+    }
+
+    .paste-title {
         margin-bottom: 0;
     }
-
-    .paste-content {
-        margin: 1rem;
-        margin-top: 0.5rem;
-    }
-
 }

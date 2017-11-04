@@ -1,0 +1,5 @@
+
+.icon-doc-new:before { content: '\e800'; } /* '' */
+.icon-code:before { content: '\e801'; } /* '' */
+.icon-info:before { content: '\e802'; } /* '' */
+.icon-github-text:before { content: '\e803'; } /* '' */

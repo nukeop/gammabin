@@ -6,6 +6,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" />
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/fonts.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/icons/css/gammabin.css') }}" />
 
 	<!-- highlight.js -->
 	<link rel="stylesheet"
@@ -21,16 +22,22 @@
 </head>
 <body>
 	<div class="page">
-		<nav class="navbar">
-			<div class="brand">
-				{{ g.appname }}
+		<div class="controls">
+			<div class="navbar">
+				<div class="brand">
+					{{ g.appname }}
+				</div>
+				<div class="nav-buttons">
+					<a href="/"><i class="icon-doc-new"></i></a>
+					<a href="api"><i class="icon-code"></i></a>
+					<a href="#"><i class="icon-info"></i></a>
+					<a href="#"><i class="icon-github-text"></i></a>
+				</div>
 			</div>
-			<a href="/">Create</a>
-			<a href="api">API</a>
-			<a href="#">About</a>
-			<div class="spacer"></div>
-			<a href="#">Author</a>
-		</nav>
+			{% block controls %}
+			{% endblock %}
+		</div>
+		
 		<div class="content">
 			{% block content %}
 			{% endblock %}
