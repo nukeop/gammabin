@@ -1,3 +1,4 @@
 flask
 flask-sqlalchemy
+nose
 psycopg2
