@@ -56,19 +56,11 @@ button:active
     flex-flow: row;
 }
 
-div.controls
+div.navbar
 {
     display: flex;
 
     background: #343d46;
-
-    flex: 0 0 auto;
-    flex-flow: column;
-}
-
-div.navbar
-{
-    display: flex;
 
     flex-flow: column;
     align-items: center;
@@ -84,7 +76,6 @@ div.nav-buttons
     box-sizing: border-box;
     width:  100%;
     padding: 0;
-    padding-top: 0;
     justify-content: space-between;
 }
 
@@ -186,7 +177,5 @@ div.nav-buttons
     .navbar a
     {
         font-size: 16px;
-
-        padding: .25rem;
     }
 }
