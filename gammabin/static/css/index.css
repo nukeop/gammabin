@@ -81,14 +81,7 @@
 
     .paste-info
     {
-        margin: 0 .5rem;
         flex-flow: row;
-    }
-
-    .paste-title
-    {
-        margin: .5rem;
-        flex: 1 1 auto;
     }
 
     .paste-content
@@ -101,9 +94,14 @@
 {
     .paste-info {
         flex-flow: column;
+        margin: 0.5rem;
     }
 
     .paste-title {
-        margin-bottom: 0;
+        margin: 0 0 0.5rem 0;
+    }
+
+    button {
+        margin: 0;
     }
 }
