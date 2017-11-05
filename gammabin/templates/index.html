@@ -1,19 +1,15 @@
 {% extends "base.html" %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
-{% endblock %}
-
-{% block controls %}
-	<div class="paste-info">
-		<input class="paste-title" type="text" name="paste-title" id="paste-title" placeholder="Title...">
-		<button type="submit">Create</button>
-	</div>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}?version=110" />
 {% endblock %}
 
 {% block content %}
 <div class="index">
-
+	<div class="paste-info">
+		<input class="paste-title" type="text" name="paste-title" id="paste-title" placeholder="Title...">
+		<button type="submit">Create</button>
+	</div>
 	<div class="paste-content">
 		<textarea class="paste-area" name="paste-content" id="paste-content" rows="10" placeholder="Paste your code here..."></textarea>
 	</div>

@@ -10,7 +10,7 @@
     height: 100%;
     margin: 0;
 
-    flex-flow: row;
+    flex-flow: column;
     flex: 1 1 auto;
 }
 
@@ -18,8 +18,9 @@
 {
     display: flex;
 
-    flex-flow: column;
+    flex-flow: row;
     flex: 0 0 auto;
+    margin: 0.5rem 0;
 }
 
 .paste-content
@@ -46,7 +47,8 @@
 .paste-title
 {
     box-sizing: border-box;
-    margin: 0 .5rem;
+    margin: 0 0 0 0.5rem;
+    flex: 1 1 auto;
 
     background: #4f5b66;
 }
